@@ -8,7 +8,7 @@
 export PRETRAINED_MODEL_PATH='../model/model.ckpt-1400000'
 export FINETUNE_OUTPUT_DIR='../model/livedoor_output'
 
-(cd ../src; python3 ./run_classifier.py \
+(python3 ../src/run_classifier.py \
     --task_name=livedoor \
     --do_train=true \
     --do_eval=true \
