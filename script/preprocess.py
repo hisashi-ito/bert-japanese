@@ -89,4 +89,3 @@ def save(df):
 download()    # コーパスデータをダウンロード
 df = corpus() # コーパスデータをデータフレームへ変換
 save(df)      # コーパスデータを保存
-

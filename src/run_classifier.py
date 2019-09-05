@@ -17,6 +17,7 @@ import tempfile
 import tokenization_sentencepiece as tokenization
 import tensorflow as tf
 import utils
+import random
 
 CURDIR = os.path.dirname(os.path.abspath(__file__))
 CONFIGPATH = os.path.join(CURDIR, os.pardir, 'config.ini')
@@ -246,8 +247,10 @@ class LivedoorProcessor(DataProcessor):
         label = tokenization.convert_to_unicode(line[idx_label])
         examples.append(
             InputExample(guid=guid, text_a=text_a, text_b=None, label=label))
+    random.shuffle(examples)
     return examples
-
+    
+    
 
 def convert_single_example(ex_index, example, label_list, max_seq_length,
                            tokenizer):
@@ -685,9 +688,8 @@ def main(_):
     raise ValueError("Task not found: %s" % (task_name))
 
   processor = processors[task_name]()
-
   label_list = processor.get_labels()
-
+  
   tokenizer = tokenization.FullTokenizer(
       model_file=FLAGS.model_file, vocab_file=FLAGS.vocab_file,
       do_lower_case=FLAGS.do_lower_case)
@@ -713,6 +715,9 @@ def main(_):
   num_warmup_steps = None
   if FLAGS.do_train:
     train_examples = processor.get_train_examples(FLAGS.data_dir)
+
+    print(type(train_examples))
+    
     num_train_steps = int(
         len(train_examples) / FLAGS.train_batch_size * FLAGS.num_train_epochs)
     num_warmup_steps = int(num_train_steps * FLAGS.warmup_proportion)
