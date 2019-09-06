@@ -1,0 +1,806 @@
+nohup: 入力を無視します
+/home/h-ito/.local/lib/python3.5/site-packages/tensorflow/python/framework/dtypes.py:523: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/h-ito/.local/lib/python3.5/site-packages/tensorflow/python/framework/dtypes.py:524: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/h-ito/.local/lib/python3.5/site-packages/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/h-ito/.local/lib/python3.5/site-packages/tensorflow/python/framework/dtypes.py:526: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/h-ito/.local/lib/python3.5/site-packages/tensorflow/python/framework/dtypes.py:527: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/h-ito/.local/lib/python3.5/site-packages/tensorflow/python/framework/dtypes.py:532: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+WARNING:tensorflow:Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7f6d7e058ea0>) includes params argument, but params are not passed to Estimator.
+INFO:tensorflow:Using config: {'_save_checkpoints_secs': None, '_train_distribute': None, '_log_step_count_steps': None, '_evaluation_master': '', '_device_fn': None, '_protocol': None, '_tf_random_seed': None, '_model_dir': '../model/livedoor_output', '_service': None, '_save_summary_steps': 100, '_master': '', '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_num_worker_replicas': 1, '_session_config': allow_soft_placement: true
+graph_options {
+  rewrite_options {
+    meta_optimizer_iterations: ONE
+  }
+}
+, '_is_chief': True, '_cluster': None, '_save_checkpoints_steps': 1000, '_num_ps_replicas': 0, '_tpu_config': TPUConfig(iterations_per_loop=1000, num_shards=8, num_cores_per_replica=None, per_host_input_for_training=3, tpu_job_name=None, initial_infeed_sleep_secs=None, input_partition_dims=None), '_task_id': 0, '_eval_distribute': None, '_global_id_in_cluster': 0, '_experimental_distribute': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f6d70ebe780>, '_task_type': 'worker'}
+INFO:tensorflow:_TPUContext: eval_on_tpu True
+WARNING:tensorflow:eval_on_tpu ignored because use_tpu is False.
+INFO:tensorflow:Writing example 0 of 4421
+INFO:tensorflow:*** Example ***
+INFO:tensorflow:guid: train-1
+INFO:tensorflow:tokens: [CLS] ▁ 大島 優 子が ここから どう 破滅 していく のか ? ▁『 闇 金 ウシ ジ マ くん 』 特 報 解禁 “ 闇 金 ” という 禁 断 の 題材 を リアル に 描いた 漫画 史上 最大の 問題 作 「 闇 金 ウシ ジ マ くん 」 が 、 映画化 され 8 月 25 日から 公開 。 その 特 報 映像 が 遂に 解禁 となった 。 債務 者を 非 情 に追い 込み 取り 立て る 最強 の 闇 金 ウシ ジ マ には 若手 実力 派 俳優の 山田 孝 之 。 人生 の目的 を見 失 い 出会い カフェ に 出入り する フリー ター 鈴木 未 來 には akb 48 の 大島 優 子 。 過去 最大 イベント を成功させ て 人生 を 一発 逆転 し 成り 上 が ろうとする イベント サークル の代表 ・ 小川 純 には 『 荒川 アンダー ザ ブリッジ 』 の 林 遣 都 。 その他 、 崎 本 大 海 、 や べ きょう すけ が ドラマ シリーズ から 引き続き 登場 。 さらに 映画 版 新 キャスト には 、 新井 浩 文 、 岡田 義 徳 、 ム ロ ツ ヨシ 、 鈴 之助 、 内田 春 菊 、 黒 沢 あ す か など 個性的な 役者 が 揃い 、 エ グ い 世界 を より 危険 に 彩 る 。 今回 、 映画 『 闇 金 ウシ ジ マ くん 』 特 報 映像 が 解禁 となったが 、 わずか 30 秒 の 短い 映像 ながらも ス リル 満 点 に 仕 上がって いる 。 この 予告編 では 、 大島 優 子 はまだ きれい な 姿で いる が 、 本作では 母親の 借金 を 肩 代わり したことで 、 ウシ ジ マ から 取り 立て を受け 追い つ められ ていく 役 。 女の子 たちが 金 のために 時間 を切り 売り する 「 出会い カフェ 」 に 踏み 入れ て 堕 ち ていく 。 ここから どう 変わる のか 見 ものである 。 さらに 、 原作 ファン には 嬉 しい 、 肉 蝮 ( に くま む し ) の 有名な 「 あの 」 シーン を思わせる カット が チ ラ リ と 登場する の も 見逃 せない 。 映画 『 闇 金 ウシ ジ マ くん 』 は 8 月 25 日 ( 土 ) より 全国 公開 。 【 mo vi e ▁ enter お すすめ 記事 】 ・ 石川 梨 華 、 ナンバー 1 ホス テス を目指し 奮闘 ・ 美 山 加 恋 と 優 香 が 福島 に ! ▁ 絆 をつなぐ 大 切 さを 映画 を通して 伝える ・ 福田 萌 、 ジャガイモ 型 ゴースト に襲われ た 恐怖 体験 を 告白 ・ 長 澤 まさ み の 胸 元 に ハート が バク バク 、 モ テ キ 「 みゆき の部屋 & る み 子 の部屋 」 [SEP]
+INFO:tensorflow:input_ids: 4 9 9648 2501 4367 11346 1258 28559 3263 1974 3017 138 6813 252 18816 254 157 6817 36 1757 2313 22106 1314 6813 252 809 49 3649 1514 10 12626 18 9337 17 8563 1302 3524 1877 451 332 23 6813 252 18816 254 157 6817 21 12 7 7723 79 50 22 228 532 1069 8 65 1757 2313 1337 12 16104 22106 72 8 9040 6296 696 2834 9427 1330 1034 3480 56 10041 10 6813 252 18816 254 157 42 5350 6597 591 13713 3142 2079 834 8 4221 14227 1429 2901 128 14180 7640 17 13114 35 1169 470 2636 1006 31106 42 11147 1135 10 9648 2501 129 8 2756 1032 906 19638 58 4221 18 22852 5790 32 15171 113 12 20111 906 7655 7111 13 8264 2235 42 39 10767 9607 286 8339 36 10 707 9381 873 8 3647 7 1105 96 62 300 7 26 1720 3137 7712 12 1000 340 28 4697 2498 8 476 244 349 123 5096 42 7 16424 4496 251 7 6054 335 880 7 193 232 319 14606 7 8199 4162 7 15060 772 4755 7 657 768 703 263 95 45 28999 7438 12 27746 7 234 346 128 301 18 94 3657 17 4460 56 8 11641 7 244 39 6813 252 18816 254 157 6817 36 1757 2313 1337 12 22106 4670 7 3680 141 1053 10 3729 1337 3684 60 6428 1127 313 17 2499 11144 546 8 80 30687 38 7 9648 2501 129 6389 27593 57 16416 546 12 7 11501 19119 13337 18 4026 10337 7608 7 18816 254 157 28 1034 3480 620 4362 192 14704 2199 610 8 12953 3103 252 557 364 9541 4935 35 23 14180 7640 21 17 8652 2986 58 29584 662 2199 8 11346 1258 10848 1974 310 753 8 476 7 2905 777 42 23015 3456 7 2039 0 15 17 14032 561 32 14 10 3225 23 10252 21 1652 22839 3685 12 276 114 146 20 5617 10 30 30112 13035 8 244 39 6813 252 18816 254 157 6817 36 11 50 22 228 33 15 811 14 94 676 1069 8 17536 2100 3188 255 9 27884 220 22050 2110 7305 13 4637 7681 1638 7 5046 24 13640 6295 10987 23171 13 400 84 1117 2865 20 2501 1403 12 4090 17 543 9 19856 24702 62 1899 12267 244 3343 11137 13 9692 18473 7 26399 177 21679 15082 40 7962 3587 18 10608 13 117 2984 8553 206 10 4032 156 17 4769 12 11539 11539 7 399 333 260 23 25308 16216 763 56 206 129 16216 21 5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:label: movie-enter (id = 4)
+INFO:tensorflow:*** Example ***
+INFO:tensorflow:guid: train-2
+INFO:tensorflow:tokens: [CLS] ▁ インタビュー : クリスチャン ・ ベール 「 演じる ことができる の は 役者 だけ 」 公開 当時 、 全米 歴代 2 位 という メガ ヒット を記録し 、 世界中で 社会 現象 を 巻き 起こした 『 ダーク ナイト 』 から 4 年 、「 誰も が 衝撃 を受ける 」 と クリストファー ・ ノー ラン 監督 が 自信 を持って 贈 る 『 ダーク ナイト ▁ ライ ジング 』 が 7 月 24 日より 公開された 。 ゴ ッサ ム シティ を舞台に 前作 を超える 最後の 戦い を繰り広げる 本作 で 、『 バットマン ▁ ビ ギン ズ 』『 ダーク ナイト 』 に続き 、 ブルース ・ ウェイン / ダーク ナイト を演じる クリスチャン ・ ベール に 、 本作 に登場する キャラクター や ノー ラン 監督 について 語 って もらった 。 アン ・ ハ サ ウェイ なら 「 や れる 」 — — 本作の 脚本 について どう 思い ます か ? クリスチャン ・ ベール ( 以下 、 クリスチャン ) : 三部作 の 最後 を飾る の に ふさわしい 内容 の脚本 だ と思った よ 。 描く だけ の価値 のある 物語 だった し 、 以前は クリストファー ・ ノー ラン 監督 が 果たして 3 本 目 を作る の かどうか 定 か ではなかった けれど 、 今回の 脚本 を 読 んで 、 なぜ 彼が 3 本 目を 作 ろうとした のか 、 よく 理解 できた 気 が した んだ 。 — — 前作 で ブルース ・ ウェイン / ダーク ナイト は 、 肉体 的にも 精神的 にも 大きな 傷 を負い ました が 、 今回の ブルース は どう なって います か ? クリスチャン : 今回の 彼 も やはり 肉体 的 、 精神的 に 傷を負っ ている 状態 。 前作 で 自らが 選んだ 決断 の せい で 苦しんで いる んだ 。 ゴ ッサ ム シティ の 希望 のために 選んだ 道 として 短い 間は 問題 なかったが 、 真実 は やがて 白 日 の下 にさらされ る 。 ブルース にとっては 人生 で最も 厳しい 時 を迎える ことになる んだ 。 自 責 の 念 に押し 潰 される んだ よ 。 そして 、 バットマン は 姿を消し てしまう の さ 。 — — そんな 彼の 前に 、 新たな キャラクター が現れ て 、 事態 が変化し ていき ます よ ね 。 クリスチャン : アン ・ ハ サ ウェイ 演じる セ リーナ は不 作 法 で 、 気 が強く て 、 厚 か ましく て 、 バットマン が ブルース である ことも お 構 いな し という 女性 な んだ 。 でも ブルース は 、 彼女の そんな ところ に興味 を抱いた んだ よ 。 何 しろ 大 勢 の 人に 正体 を隠し ている だけに 、 彼 にとって 彼女は 非常に 興味 を そ そ る 、 刺激 的で 、 ユーモア のある 女性 として 映 る んだ 。 彼女は 、 再び 人々の 気 力を 蘇 らせる 人 なん だよ 。 — — キャット ウーマン を演じた アン ・ ハ サ ウェイ について どう 思い ます か ? クリスチャン : 最初の オーディション で の脚本 の 読み 合わせ の後 、 僕 は すぐに ノー ラン 監督の 方を 向 いた んだ 。 という の も 、 彼は いつも カメラ の 横 に 立っている から 、 果たして 僕 の 立っている 位置 から 見え ている ものが 、 ちゃん と 彼に も 見える かどうか わか らなかった から ね 。 僕 は 、「 彼女 なら や [SEP]
+INFO:tensorflow:input_ids: 4 9 5564 76 10817 13 10279 23 11971 1046 10 11 7438 926 21 1069 412 7 3521 3514 25 205 49 5745 2709 7381 7 20408 567 2420 18 3949 14102 39 9199 3039 36 28 37 16 93 10365 12 5960 1818 21 20 18452 13 1702 466 464 12 16545 4385 5461 56 39 9199 3039 9 1244 9135 36 12 46 22 249 2304 7859 8 425 6485 193 1776 11578 4068 3122 1240 2648 25414 3118 19 388 29093 9 365 7633 111 1507 9199 3039 36 12317 7 6547 13 15119 140 9199 3039 14560 10817 13 10279 17 7 3118 2753 911 26 1702 466 464 257 274 341 22070 8 500 13 380 209 2154 1598 23 26 2991 21 19423 19423 6322 3125 257 1258 2969 3418 95 3017 10817 13 10279 15 1181 7 10817 14 76 24100 10 6450 16671 10 17 23005 1205 17823 314 12700 842 8 14615 926 18178 863 1101 121 32 7 5949 18452 13 1702 466 464 12 26448 31 96 303 3865 10 4615 609 95 6838 24585 7 16058 3125 18 3183 2011 7 11133 3446 31 96 7589 332 20563 1974 7 1600 2985 2747 474 12 29 736 8 19423 19423 4068 19 6547 13 15119 140 9199 3039 11 7 9456 14245 14460 137 622 2169 28738 5363 12 7 16058 6547 11 1258 10019 19433 95 3017 10817 76 16058 2189 30 5770 9456 160 7 14460 17 28608 68 621 8 4068 19 12438 17421 12294 10 1501 19 30662 546 736 8 425 6485 193 1776 10 5072 557 17421 162 34 3729 9635 451 6691 7 10553 11 4248 422 33 2757 21807 56 8 6547 5784 4221 4867 5209 180 7500 2060 736 8 957 11685 10 4456 16245 11382 98 736 842 8 862 7 29093 11 26405 2201 10 338 8 19423 19423 11152 1063 1019 7 1379 911 8322 58 7 2889 26313 13749 3418 842 969 8 10817 76 500 13 380 209 2154 11971 342 9274 10053 332 151 19 7 474 6351 58 7 4565 95 27922 58 7 29093 12 6547 27 2464 220 12090 16289 32 49 577 57 736 8 153 6547 11 7 3296 11152 917 14727 24918 736 842 8 1059 9444 62 1436 10 3588 9774 22849 68 17509 7 2189 1522 5107 1627 8268 18 1010 1010 56 7 6699 7194 7 23729 863 577 34 6208 56 736 8 5107 7 762 9021 474 3985 7157 10825 63 4547 24152 8 19423 19423 19017 28841 9412 500 13 380 209 2154 257 1258 2969 3418 95 3017 10817 76 861 5344 19 17823 10 3009 4870 2099 7 4882 11 2607 1702 466 3278 12250 1669 308 736 8 49 10 30 7 1096 9328 2782 10 894 17 18417 28 7 26448 4882 10 18417 1958 28 11096 68 3031 7 2278 20 9831 30 9751 4615 5786 7661 28 969 8 4882 11 93 3930 1598 26 5
+INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:label: movie-enter (id = 4)
+INFO:tensorflow:*** Example ***
+INFO:tensorflow:guid: train-3
+INFO:tensorflow:tokens: [CLS] ▁ ブラック マジック デザイン 、 hy per de ck ▁s sd ▁ レコーダー に ▁ タイム コード 、 d n x hd ▁ qui ck time ▁ サポート を追加 【 ビデオ sa lon 】 ブラック マジック デザインは hy per de ck ▁ 2.5 ▁ パブリック ベータ 版 をリリースした 。 今回の ソフトウェア アップデート では 、 エン ベッド タイム コード の サポート 、 qui ck time ▁ への d n x hd ▁ 収録 、 s di ▁ カメラ による hy per de ck ▁s sd ▁ レコーダー への 収録 開始 機能 が追加され る 。 hy per de ck ▁ 2.5 ▁ パブリック ベータ 版 ( mac ▁os x / windows ▁ 対応 ) は 同社 web サイト より 無償 で ダウンロード 可能 。 今回の アップデート は black magic ▁de sign ▁s sd ▁ レコーダー の hy per de ck ▁ shu tt le ▁2 ▁ ならびに hy per de ck ▁studio ▁ の両 モデル に対応している 。 hy per de ck ▁ 2.5 ▁ ソフトウェア アップデート は 、 hy per de ck ▁ shu tt le ▁ ならびに hy per de ck studio ▁ に 、 タイム コード 機能 を追加 する 。 hd - s di ▁ ビデオ 信号 の 補助 データ スペース に エン ベッド されている タイム コード 情報 は 、 hy per de ck ▁ の 非 圧縮 / av id ▁d n x hd ▁ 圧縮 ビデオ ファイル に 書き 込まれる 。 ユーザー は 、 標準 rp -18 8 hd ▁ プロトコル に基づいて 、 入力 ビデオ ストリーム の タイム コード を 保存 することができ 、 収録 した ファイル に オリジナルの タイム コード 情報 を付けて 再生 することが可能 だ 。 hy per de ck ▁ shu tt le ▁ ならびに hy per de ck studio ▁ は 、 av id ▁d n x hd ▁ 収録 ・ 再生 に対応 しており 、 av id ▁ から 完全な 認定 を受けている 。 hy per de ck ▁ 2.5 ▁ ソフトウェア は 、 d n x hd ▁m x f ▁ フォーマット ファイル に加えて 、 d n x hd ▁ qui ck time ▁ の 収録 ・ 再生 オプション を追加 する 。 d n x hd ▁ ファイル を qui ck time ▁ フォーマット で ラ ッピング することにより 、 av id ▁ の 業界 標準 ファイル の エン コード を より 幅広い ソフトウェア と 使用した り 、 特定の ワーク フロー に対応した り できる 。 また 、 hy per de ck ▁ shu tt le ▁ への 収録 が 、 カメラ やその他の hd - s di ▁ ビデオ 機器 により 自動的に 開始 できるようになる 。 プロ 仕様の カメラ の多くは 収録 の 開始 / 停止 フラ グ を s di ▁ ビデオ 出力 に エン ベッド しているが 、 hy per de ck ▁ shu tt le ▁ は これらの コマンド を認識し 、 カメラ と 同期 して 収録 を開始 / 停止 できる 。 この 機能 によって カメラ と ディスク レコーダー で それぞれ 収録 機能を 起動 させ なくても hy per de ck ▁ shu tt le ▁ に収録 できるようになる 。 標準的な 方法で は 開始 / 停止 フラ グ を 出力 しない カメラ もある ため 、 今回の アップデート には タイム コード 収録 [SEP]
+INFO:tensorflow:input_ids: 4 9 2523 10590 953 7 7914 4235 1372 3600 1785 5625 9 23021 17 9 1574 2025 7 221 272 282 7065 9 9495 3600 15191 9 3752 10916 17536 1593 1854 19338 7305 2523 10590 14565 7914 4235 1372 3600 9 7310 9 17425 16454 349 17502 8 16058 2360 16937 38 7 875 13163 1574 2025 10 3752 7 9495 3600 15191 9 105 221 272 282 7065 9 1867 7 81 3639 9 2782 71 7914 4235 1372 3600 1785 5625 9 23021 105 1867 1163 640 17639 56 8 7914 4235 1372 3600 9 7310 9 17425 16454 349 15 6888 15364 282 140 4943 9 1270 14 11 2155 4537 1487 94 15109 19 6901 1790 8 16058 16937 11 13295 28280 1542 17496 1785 5625 9 23021 10 7914 4235 1372 3600 9 28746 4987 1409 892 9 7867 7914 4235 1372 3600 21121 9 9536 693 16975 8 7914 4235 1372 3600 9 7310 9 2360 16937 11 7 7914 4235 1372 3600 9 28746 4987 1409 9 7867 7914 4235 1372 3600 30648 9 17 7 1574 2025 640 10916 35 8 7065 61 81 3639 9 1593 3173 10 4350 1167 3115 17 875 13163 134 1574 2025 525 11 7 7914 4235 1372 3600 9 10 696 7182 140 2973 2427 3023 272 282 7065 9 7182 1593 2806 17 2202 18717 8 3245 11 7 1884 10597 8934 50 7065 9 15593 4527 7 4616 1593 15984 10 1574 2025 18 2242 17668 7 1867 29 2806 17 11032 1574 2025 525 18640 3280 14123 314 8 7914 4235 1372 3600 9 28746 4987 1409 9 7867 7914 4235 1372 3600 30648 9 11 7 2973 2427 3023 272 282 7065 9 1867 13 3280 9590 453 7 2973 2427 9 28 6229 2740 6396 8 7914 4235 1372 3600 9 7310 9 2360 11 7 221 272 282 7065 1313 282 210 9 12285 2806 4440 7 221 272 282 7065 9 9495 3600 15191 9 10 1867 13 3280 6717 10916 35 8 221 272 282 7065 9 2806 18 9495 3600 15191 9 12285 19 114 13994 10054 7 2973 2427 9 10 3048 1884 2806 10 875 2025 18 94 6951 2360 20 8966 101 7 2919 6907 8592 10907 101 355 8 240 7 7914 4235 1372 3600 9 28746 4987 1409 9 105 1867 12 7 2782 20802 7065 61 81 3639 9 1593 2206 74 10704 1163 26586 8 449 16708 2782 4165 1867 10 1163 140 2004 3512 346 18 81 3639 9 1593 2152 17 875 13163 4662 7 7914 4235 1372 3600 9 28746 4987 1409 9 11 1432 6728 30064 7 2782 20 5987 55 1867 4147 140 2004 355 8 80 640 73 2782 20 4334 23021 19 832 1867 10268 10877 909 9770 7914 4235 1372 3600 9 28746 4987 1409 9 11305 26586 8 16487 9537 11 1163 140 2004 3512 346 18 2152 904 2782 553 97 7 16058 16937 42 1574 2025 1867 5
+INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:label: kaden-channel (id = 2)
+INFO:tensorflow:*** Example ***
+INFO:tensorflow:guid: train-4
+INFO:tensorflow:tokens: [CLS] ▁ センター 試験 終了 ! ▁ 受験 生 ファン に 眞 鍋 か を り が 的 確 な アドバイス をしていた 【 話題 】 寒 い 週末 、 毎年 恒例 の センター 試験 が行われていた 。 受験 生 にとっては 大切な 日 。 ファン の 受験 を タレント の 眞 鍋 か を り も ツイッター で 応援 していた 。 「 明日 の センター 試験 なので 自信 の 持 てる 一言 ください 」 と 眞 鍋 に エール を求める ファン 。 彼女の 返答 は 「 助 詞 の 使い方 間違って る から 現 国 マジ で 気 をつけ な 」 だった 。 この 的 確 な アドバイス に 「 これは 良い 指摘 」 と ツ イー ト を評価する 声 が多く 登場した 。 また 、 眞 鍋 に コメント を もらった 受験 生 は ツイッター の フォ ロ ワー が 一気に 倍 になった ということ だ 。 さ て 今回の 彼女の き つい エール は 生 か された の だろうか 。 ■ 関連 記事 ・ facebook 投稿 で 原因 発覚 ? ▁ イタリアの 豪華 客船 、 船長 がい いとこ 見せた く て 事故 か ? 【 話題 】 ・ 傷 が 消え る ケース は 世界 初 ! ▁ 日産 が開発 の iphone ケース に 注目 【 売れ 筋 チェック 】 ・ 日本の 首都 は 吉野 家で 首相 は キ ティ ちゃん !? ▁アン サイ クロ ペ ディア の 日本の 項目 が お も しろ い 【 話題 】 ・ もはや 格闘 ドラマ ? ▁ 松 潤 主演の 「 ラッキー セブン 」 は 今後 が 楽しみ な 初回 16 . 3% 【 話題 】 ・ 魁 !! ▁ ビデオ 道場 ▁2012 年 1 月号 【 ビデオ sa lon 】 [SEP]
+INFO:tensorflow:input_ids: 4 9 571 984 1448 543 9 5435 196 777 17 16522 10653 95 18 101 12 160 10594 57 21000 3880 17536 4346 7305 4906 128 11544 7 1863 21849 10 571 984 10686 8 5435 196 5784 27990 33 8 777 10 5435 18 2886 10 16522 10653 95 18 101 30 28915 19 5821 133 8 23 14787 10 571 984 5010 16545 10 1535 8467 24985 19120 21 20 16522 10653 17 6675 3485 777 8 3296 25293 11 23 1356 4719 10 24667 28823 56 28 295 115 13499 19 474 9833 57 21 121 8 80 160 10594 57 21000 17 23 881 4070 5853 21 20 319 2019 103 29443 891 1151 6075 8 240 7 16522 10653 17 5501 18 22070 5435 196 11 28915 10 2197 232 4078 12 10598 1892 344 3972 314 8 338 58 16058 3296 203 10805 6675 11 196 95 53 10 25907 8 25825 1617 2110 13 24337 5166 19 3275 13369 3017 9 4588 20773 18596 7 16384 5837 26504 26918 195 58 1350 95 3017 17536 4346 7305 13 2169 12 8091 56 2472 11 301 503 543 9 10425 9904 10 22021 2472 17 7928 17536 9170 1722 8390 7305 13 216 3277 11 7717 16757 1731 11 260 299 2278 19959 14133 1855 2409 719 3356 10 216 4080 12 220 30 9444 128 17536 4346 7305 13 12039 8355 1000 3017 9 720 7794 9796 23 25931 7911 21 11 6456 12 19116 57 5513 130 86 7064 17536 4346 7305 13 27595 4045 9 1593 8953 692 16 24 3692 17536 1593 1854 19338 7305 5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:label: kaden-channel (id = 2)
+INFO:tensorflow:*** Example ***
+INFO:tensorflow:guid: train-5
+INFO:tensorflow:tokens: [CLS] ▁ 彼女の 香り は 、 柔軟 剤 の 香り 都内 で 一人 暮らし をしている サ ナ エ さん ( 28 歳 ・ 医療 関連 ) は 、 同僚 の ミノ リ さん ( 25 歳 ) が 返し てくれた タ オル に 感 激 した そう だ 。 「 貸 したとき よりも フ ワ フ ワ になって いて 、 いい 香り が した んです 。 女性 ならではの 心 遣い だ と思い ました 」 。 後日 、 サ ナ エ さん が 気 になる 香り の名前 を聞いた ところ 、 ミノ リ さん からは 意 外 が 答え が ... 。 「 それ 、 柔軟 剤 の 香り な んです 。 意 外 といい 感じ です よ ね 。 靴 下 を 履 く とき も 、 ふ わ っ といい 香り が す んです よ 。 今まで 人工 的な 香り は 苦手 だった んです けど 、 この 香り は 別 です 」 と 嬉 し そう に 話し てくれた 。 柔軟 剤 といえば 、 洗濯 物を 柔らかく 仕上げ るための もの と考え がち だが 、 この ところ 、 香り に こだわり のある 柔軟 剤 が増えている 。 「 タ オル は フロー ラル 系の 香り の 柔軟 剤 、 洋 服 は 夫 も 着 る の で ハーブ 系の 香り の 柔軟 剤 を使って います 」 と 話し てくれた の は ミナ ミ さん ( 28 歳 / 既婚 ・ 派遣 ) 。 ただし 、 最初から 香り に こ だ わ って 柔軟 剤 を選んだ の ではない という 。 「 部屋 干 し の 臭い 消し になると 聞いて ▁ 柔軟 剤 を使い 始めた んです 。 最初は 、 人気のある 海外 の メーカーの ものを 買 った んです けど 、 私 には 香り が 強 すぎて 、 柔軟 剤 酔 い を おこ し かけ ました ( 笑 ) 。 それ で 、 今 は 、 もっぱら 国内 メーカー のもの を使って います 」( ミナ ミ さん ) 夜 、 洗濯 をして 室内 に 干 したり 、 花粉 症 対策として 洗濯 物を 部屋 干 し する 人 が増えている 昨 今 、 悩み の タ ネ の 「 生 乾 き の 洗濯 物の 臭い 」 が 解決 する なら と 、 防 臭 効果 を 期待 して 柔軟 剤 を購入する 人は 多い 。 しかも 、 ア ロマ の良い 香り が したり 、 服 を ク シュ ク シュ する 加 減 で 香り が 広がった りと 、 香り の 面でも 柔軟 剤 は 進化 した の だから 、 女性 たちの 興味 が集まる の も 、 もっとも な 話 だろう 。 結果として 、 今まで は 、 女性 から する 「 良い 香り 」 といえば 、 香 水 や オー デ コロン 、 シャン プー や リン ス 、 石鹸 の 香り など が一般的 だったが 、 最近 は 、 ここに 柔軟 剤 の 香り が 加わった 。 お 悩み 解決 & 洗濯 後の 香り で 、 女性 は 幸せ になれ る のだ 。 ただし 、 香り は 、 人 によって 好み が 分かれ ること を忘れ てはいけない 。 「 以前 、 母 が 購入した 柔軟 剤 の 香り で 、 気持ち が悪く なり ました 」 と 話し てくれた の [SEP]
+INFO:tensorflow:input_ids: 4 9 3296 14975 11 7 15126 1930 10 14975 21098 19 2770 8701 3159 209 145 234 774 15 323 559 13 1946 1617 14 11 7 8154 10 19887 146 774 15 228 559 14 12 8207 13431 170 2271 17 852 4805 29 1043 314 8 23 11311 11554 632 211 592 211 592 1880 1229 7 2505 14975 12 29 13391 8 577 28212 509 20273 314 11585 5363 21 8 13489 7 209 145 234 774 12 474 367 14975 2228 12290 917 7 19887 146 774 994 1534 311 12 7124 12 2532 8 23 566 7 15126 1930 10 14975 57 13391 8 1534 311 6401 4878 2767 842 969 8 8651 184 18 13966 195 1488 30 7 1363 704 1315 6401 14975 12 263 13391 842 8 8945 5152 132 14975 11 17540 121 13391 13382 7 80 14975 11 519 2767 21 20 23015 32 1043 17 9016 13431 8 15126 1930 20711 7 24381 6550 30774 14310 14398 375 7915 15123 570 7 80 917 7 14975 17 23865 863 15126 1930 25559 8 23 170 2271 11 8592 4513 1437 14975 10 15126 1930 7 1506 1845 11 764 30 447 56 10 19 26368 1437 14975 10 15126 1930 2851 19433 21 20 9016 13431 10 11 9573 318 774 15 323 559 140 27203 13 3169 14 8 3408 7 15924 14975 17 315 314 704 341 15126 1930 14951 10 977 49 8 23 2335 6363 32 10 25923 20531 1726 23360 9 15126 1930 6943 2891 13391 8 17275 7 23981 1355 10 15135 3509 5605 201 13391 13382 7 1656 42 14975 12 1359 21858 7 15126 1930 11420 128 18 11515 32 4348 5363 15 5011 14 8 566 19 7 899 11 7 18037 1200 1646 1949 2851 19433 293 9573 318 774 14 1090 7 24381 7286 6775 17 6363 1965 7 25507 2578 16350 24381 6550 2335 6363 32 35 63 25559 12096 899 7 15710 10 170 316 10 23 196 5459 203 10 24381 8409 25923 21 12 2965 35 1598 20 7 2302 10159 1045 18 2605 55 15126 1930 21102 1445 3431 8 11383 7 88 9175 13463 14975 12 1965 7 1845 18 104 378 104 378 35 1117 1864 19 14975 12 17786 13788 7 14975 10 22570 15126 1930 11 3820 29 10 6129 7 577 3121 8268 21141 10 30 7 4621 57 417 2888 8 6895 7 8945 11 7 577 28 35 23 4070 14975 21 20711 7 1403 164 26 844 189 18952 7 3598 7972 26 558 60 7 30340 10 14975 45 12254 1100 7 9081 11 7 8286 15126 1930 10 14975 12 16250 8 220 15710 2965 763 24381 494 14975 19 7 577 11 15199 18152 56 6312 8 3408 7 14975 11 7 63 73 16419 12 8977 900 19828 25934 8 23 4412 7 865 12 16868 15126 1930 10 14975 19 7 8053 15842 1700 5363 21 20 9016 13431 10 5
+INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:label: dokujo-tsushin (id = 0)
+INFO:tensorflow:***** Running training *****
+INFO:tensorflow:  Num examples = 4421
+INFO:tensorflow:  Batch size = 4
+INFO:tensorflow:  Num steps = 11052
+WARNING:tensorflow:From ../src/run_classifier.py:425: map_and_batch (from tensorflow.contrib.data.python.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.map_and_batch(...)`.
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Running train on CPU
+INFO:tensorflow:*** Features ***
+INFO:tensorflow:  name = input_ids, shape = (4, 512)
+INFO:tensorflow:  name = input_mask, shape = (4, 512)
+INFO:tensorflow:  name = is_real_example, shape = (4,)
+INFO:tensorflow:  name = label_ids, shape = (4,)
+INFO:tensorflow:  name = segment_ids, shape = (4, 512)
+INFO:tensorflow:**** Trainable Variables ****
+INFO:tensorflow:  name = bert/embeddings/word_embeddings:0, shape = (32000, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/embeddings/token_type_embeddings:0, shape = (2, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/embeddings/position_embeddings:0, shape = (512, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/embeddings/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/embeddings/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/pooler/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/pooler/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = output_weights:0, shape = (9, 768)
+INFO:tensorflow:  name = output_bias:0, shape = (9,)
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Graph was finalized.
+2019-09-06 15:22:24.763921: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2019-09-06 15:22:24.825902: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:964] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-09-06 15:22:24.826571: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:01:00.0
+totalMemory: 10.92GiB freeMemory: 10.77GiB
+2019-09-06 15:22:24.901492: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:964] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-09-06 15:22:24.902134: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 1 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:02:00.0
+totalMemory: 10.92GiB freeMemory: 10.77GiB
+2019-09-06 15:22:24.902887: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0, 1
+2019-09-06 15:22:25.531001: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-09-06 15:22:25.531033: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 1 
+2019-09-06 15:22:25.531039: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N Y 
+2019-09-06 15:22:25.531043: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 1:   Y N 
+2019-09-06 15:22:25.531188: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10419 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2019-09-06 15:22:25.531388: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 10421 MB memory) -> physical GPU (device: 1, name: GeForce GTX 1080 Ti, pci bus id: 0000:02:00.0, compute capability: 6.1)
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Saving checkpoints for 0 into ../model/livedoor_output/model.ckpt.
+INFO:tensorflow:global_step/sec: 2.69874
+INFO:tensorflow:examples/sec: 10.795
+INFO:tensorflow:global_step/sec: 2.92026
+INFO:tensorflow:examples/sec: 11.6811
+INFO:tensorflow:global_step/sec: 2.90576
+INFO:tensorflow:examples/sec: 11.623
+INFO:tensorflow:global_step/sec: 2.91577
+INFO:tensorflow:examples/sec: 11.6631
+INFO:tensorflow:global_step/sec: 2.91095
+INFO:tensorflow:examples/sec: 11.6438
+INFO:tensorflow:global_step/sec: 2.9136
+INFO:tensorflow:examples/sec: 11.6544
+INFO:tensorflow:global_step/sec: 2.91137
+INFO:tensorflow:examples/sec: 11.6455
+INFO:tensorflow:global_step/sec: 2.90394
+INFO:tensorflow:examples/sec: 11.6158
+INFO:tensorflow:global_step/sec: 2.91764
+INFO:tensorflow:examples/sec: 11.6706
+INFO:tensorflow:Saving checkpoints for 1000 into ../model/livedoor_output/model.ckpt.
+INFO:tensorflow:global_step/sec: 2.76932
+INFO:tensorflow:examples/sec: 11.0773
+INFO:tensorflow:global_step/sec: 2.79861
+INFO:tensorflow:examples/sec: 11.1945
+INFO:tensorflow:global_step/sec: 2.92507
+INFO:tensorflow:examples/sec: 11.7003
+INFO:tensorflow:global_step/sec: 2.92388
+INFO:tensorflow:examples/sec: 11.6955
+INFO:tensorflow:global_step/sec: 2.90931
+INFO:tensorflow:examples/sec: 11.6373
+INFO:tensorflow:global_step/sec: 2.90693
+INFO:tensorflow:examples/sec: 11.6277
+INFO:tensorflow:global_step/sec: 2.91669
+INFO:tensorflow:examples/sec: 11.6668
+INFO:tensorflow:global_step/sec: 2.9172
+INFO:tensorflow:examples/sec: 11.6688
+INFO:tensorflow:global_step/sec: 2.91357
+INFO:tensorflow:examples/sec: 11.6543
+INFO:tensorflow:global_step/sec: 2.91109
+INFO:tensorflow:examples/sec: 11.6443
+INFO:tensorflow:Saving checkpoints for 2000 into ../model/livedoor_output/model.ckpt.
+INFO:tensorflow:global_step/sec: 2.76564
+INFO:tensorflow:examples/sec: 11.0625
+INFO:tensorflow:global_step/sec: 2.91712
+INFO:tensorflow:examples/sec: 11.6685
+INFO:tensorflow:global_step/sec: 2.90893
+INFO:tensorflow:examples/sec: 11.6357
+INFO:tensorflow:global_step/sec: 2.9106
+INFO:tensorflow:examples/sec: 11.6424
+INFO:tensorflow:global_step/sec: 2.90741
+INFO:tensorflow:examples/sec: 11.6296
+INFO:tensorflow:global_step/sec: 2.9179
+INFO:tensorflow:examples/sec: 11.6716
+INFO:tensorflow:global_step/sec: 2.91228
+INFO:tensorflow:examples/sec: 11.6491
+INFO:tensorflow:global_step/sec: 2.91433
+INFO:tensorflow:examples/sec: 11.6573
+INFO:tensorflow:global_step/sec: 2.9094
+INFO:tensorflow:examples/sec: 11.6376
+INFO:tensorflow:global_step/sec: 2.91668
+INFO:tensorflow:examples/sec: 11.6667
+INFO:tensorflow:Saving checkpoints for 3000 into ../model/livedoor_output/model.ckpt.
+INFO:tensorflow:global_step/sec: 2.77389
+INFO:tensorflow:examples/sec: 11.0956
+INFO:tensorflow:global_step/sec: 2.89953
+INFO:tensorflow:examples/sec: 11.5981
+INFO:tensorflow:global_step/sec: 2.9064
+INFO:tensorflow:examples/sec: 11.6256
+INFO:tensorflow:global_step/sec: 2.9164
+INFO:tensorflow:examples/sec: 11.6656
+INFO:tensorflow:global_step/sec: 2.90858
+INFO:tensorflow:examples/sec: 11.6343
+INFO:tensorflow:global_step/sec: 2.91321
+INFO:tensorflow:examples/sec: 11.6528
+INFO:tensorflow:global_step/sec: 2.90176
+INFO:tensorflow:examples/sec: 11.607
+INFO:tensorflow:global_step/sec: 2.9091
+INFO:tensorflow:examples/sec: 11.6364
+INFO:tensorflow:global_step/sec: 2.90764
+INFO:tensorflow:examples/sec: 11.6306
+INFO:tensorflow:global_step/sec: 2.90778
+INFO:tensorflow:examples/sec: 11.6311
+INFO:tensorflow:Saving checkpoints for 4000 into ../model/livedoor_output/model.ckpt.
+INFO:tensorflow:global_step/sec: 2.76031
+INFO:tensorflow:examples/sec: 11.0412
+INFO:tensorflow:global_step/sec: 2.91683
+INFO:tensorflow:examples/sec: 11.6673
+INFO:tensorflow:global_step/sec: 2.91112
+INFO:tensorflow:examples/sec: 11.6445
+INFO:tensorflow:global_step/sec: 2.90088
+INFO:tensorflow:examples/sec: 11.6035
+INFO:tensorflow:global_step/sec: 2.91078
+INFO:tensorflow:examples/sec: 11.6431
+INFO:tensorflow:global_step/sec: 2.90761
+INFO:tensorflow:examples/sec: 11.6305
+INFO:tensorflow:global_step/sec: 2.91675
+INFO:tensorflow:examples/sec: 11.667
+INFO:tensorflow:global_step/sec: 2.90787
+INFO:tensorflow:examples/sec: 11.6315
+INFO:tensorflow:global_step/sec: 2.90873
+INFO:tensorflow:examples/sec: 11.6349
+INFO:tensorflow:global_step/sec: 2.91287
+INFO:tensorflow:examples/sec: 11.6515
+INFO:tensorflow:Saving checkpoints for 5000 into ../model/livedoor_output/model.ckpt.
+INFO:tensorflow:global_step/sec: 2.75081
+INFO:tensorflow:examples/sec: 11.0032
+INFO:tensorflow:global_step/sec: 2.76581
+INFO:tensorflow:examples/sec: 11.0632
+INFO:tensorflow:global_step/sec: 2.92345
+INFO:tensorflow:examples/sec: 11.6938
+INFO:tensorflow:global_step/sec: 2.902
+INFO:tensorflow:examples/sec: 11.608
+INFO:tensorflow:global_step/sec: 2.90723
+INFO:tensorflow:examples/sec: 11.6289
+INFO:tensorflow:global_step/sec: 2.91404
+INFO:tensorflow:examples/sec: 11.6562
+INFO:tensorflow:global_step/sec: 2.90932
+INFO:tensorflow:examples/sec: 11.6373
+INFO:tensorflow:global_step/sec: 2.90469
+INFO:tensorflow:examples/sec: 11.6188
+INFO:tensorflow:global_step/sec: 2.91731
+INFO:tensorflow:examples/sec: 11.6692
+INFO:tensorflow:global_step/sec: 2.91025
+INFO:tensorflow:examples/sec: 11.641
+INFO:tensorflow:Saving checkpoints for 6000 into ../model/livedoor_output/model.ckpt.
+INFO:tensorflow:global_step/sec: 2.75356
+INFO:tensorflow:examples/sec: 11.0142
+INFO:tensorflow:global_step/sec: 2.90661
+INFO:tensorflow:examples/sec: 11.6264
+INFO:tensorflow:global_step/sec: 2.90988
+INFO:tensorflow:examples/sec: 11.6395
+INFO:tensorflow:global_step/sec: 2.90569
+INFO:tensorflow:examples/sec: 11.6228
+INFO:tensorflow:global_step/sec: 2.91173
+INFO:tensorflow:examples/sec: 11.6469
+INFO:tensorflow:global_step/sec: 2.90717
+INFO:tensorflow:examples/sec: 11.6287
+INFO:tensorflow:global_step/sec: 2.90881
+INFO:tensorflow:examples/sec: 11.6352
+INFO:tensorflow:global_step/sec: 2.92095
+INFO:tensorflow:examples/sec: 11.6838
+INFO:tensorflow:global_step/sec: 2.91318
+INFO:tensorflow:examples/sec: 11.6527
+INFO:tensorflow:global_step/sec: 2.90801
+INFO:tensorflow:examples/sec: 11.6321
+INFO:tensorflow:Saving checkpoints for 7000 into ../model/livedoor_output/model.ckpt.
+INFO:tensorflow:global_step/sec: 2.75866
+INFO:tensorflow:examples/sec: 11.0347
+INFO:tensorflow:global_step/sec: 2.92171
+INFO:tensorflow:examples/sec: 11.6868
+INFO:tensorflow:global_step/sec: 2.91537
+INFO:tensorflow:examples/sec: 11.6615
+INFO:tensorflow:global_step/sec: 2.91357
+INFO:tensorflow:examples/sec: 11.6543
+INFO:tensorflow:global_step/sec: 2.91596
+INFO:tensorflow:examples/sec: 11.6638
+INFO:tensorflow:global_step/sec: 2.9088
+INFO:tensorflow:examples/sec: 11.6352
+INFO:tensorflow:global_step/sec: 2.90919
+INFO:tensorflow:examples/sec: 11.6367
+INFO:tensorflow:global_step/sec: 2.90886
+INFO:tensorflow:examples/sec: 11.6355
+INFO:tensorflow:global_step/sec: 2.9163
+INFO:tensorflow:examples/sec: 11.6652
+INFO:tensorflow:global_step/sec: 2.9107
+INFO:tensorflow:examples/sec: 11.6428
+INFO:tensorflow:Saving checkpoints for 8000 into ../model/livedoor_output/model.ckpt.
+INFO:tensorflow:global_step/sec: 2.75124
+INFO:tensorflow:examples/sec: 11.005
+INFO:tensorflow:global_step/sec: 2.91146
+INFO:tensorflow:examples/sec: 11.6458
+INFO:tensorflow:global_step/sec: 2.8253
+INFO:tensorflow:examples/sec: 11.3012
+INFO:tensorflow:global_step/sec: 2.90681
+INFO:tensorflow:examples/sec: 11.6272
+INFO:tensorflow:global_step/sec: 2.91673
+INFO:tensorflow:examples/sec: 11.6669
+INFO:tensorflow:global_step/sec: 2.9157
+INFO:tensorflow:examples/sec: 11.6628
+INFO:tensorflow:global_step/sec: 2.90296
+INFO:tensorflow:examples/sec: 11.6118
+INFO:tensorflow:global_step/sec: 2.91635
+INFO:tensorflow:examples/sec: 11.6654
+INFO:tensorflow:global_step/sec: 2.91311
+INFO:tensorflow:examples/sec: 11.6525
+INFO:tensorflow:global_step/sec: 2.91717
+INFO:tensorflow:examples/sec: 11.6687
+INFO:tensorflow:Saving checkpoints for 9000 into ../model/livedoor_output/model.ckpt.
+INFO:tensorflow:global_step/sec: 2.75496
+INFO:tensorflow:examples/sec: 11.0198
+INFO:tensorflow:global_step/sec: 2.63956
+INFO:tensorflow:examples/sec: 10.5582
+INFO:tensorflow:global_step/sec: 2.92704
+INFO:tensorflow:examples/sec: 11.7082
+INFO:tensorflow:global_step/sec: 2.91006
+INFO:tensorflow:examples/sec: 11.6402
+INFO:tensorflow:global_step/sec: 2.91039
+INFO:tensorflow:examples/sec: 11.6416
+INFO:tensorflow:global_step/sec: 2.91225
+INFO:tensorflow:examples/sec: 11.649
+INFO:tensorflow:global_step/sec: 2.91004
+INFO:tensorflow:examples/sec: 11.6402
+INFO:tensorflow:global_step/sec: 2.91284
+INFO:tensorflow:examples/sec: 11.6514
+INFO:tensorflow:global_step/sec: 2.91241
+INFO:tensorflow:examples/sec: 11.6496
+INFO:tensorflow:global_step/sec: 2.91404
+INFO:tensorflow:examples/sec: 11.6562
+INFO:tensorflow:Saving checkpoints for 10000 into ../model/livedoor_output/model.ckpt.
+INFO:tensorflow:global_step/sec: 2.76726
+INFO:tensorflow:examples/sec: 11.069
+INFO:tensorflow:global_step/sec: 2.91115
+INFO:tensorflow:examples/sec: 11.6446
+INFO:tensorflow:global_step/sec: 2.60402
+INFO:tensorflow:examples/sec: 10.4161
+INFO:tensorflow:global_step/sec: 2.90333
+INFO:tensorflow:examples/sec: 11.6133
+INFO:tensorflow:global_step/sec: 2.91234
+INFO:tensorflow:examples/sec: 11.6494
+INFO:tensorflow:global_step/sec: 2.91178
+INFO:tensorflow:examples/sec: 11.6471
+INFO:tensorflow:global_step/sec: 2.91515
+INFO:tensorflow:examples/sec: 11.6606
+INFO:tensorflow:global_step/sec: 2.90801
+INFO:tensorflow:examples/sec: 11.632
+INFO:tensorflow:global_step/sec: 2.90955
+INFO:tensorflow:examples/sec: 11.6382
+INFO:tensorflow:global_step/sec: 2.92304
+INFO:tensorflow:examples/sec: 11.6922
+INFO:tensorflow:Saving checkpoints for 11000 into ../model/livedoor_output/model.ckpt.
+INFO:tensorflow:global_step/sec: 2.76252
+INFO:tensorflow:examples/sec: 11.0501
+INFO:tensorflow:Saving checkpoints for 11052 into ../model/livedoor_output/model.ckpt.
+INFO:tensorflow:Loss for final step: 4.7324836e-05.
+INFO:tensorflow:training_loop marked as finished
+INFO:tensorflow:Writing example 0 of 1473
+INFO:tensorflow:*** Example ***
+INFO:tensorflow:guid: dev-1
+INFO:tensorflow:tokens: [CLS] ▁オ リンパ ス イメージ ング 、 防 水 ・ 耐 衝撃 など を備えた コンパクト デジタルカメラ 5 機種 を発売 【 売れ 筋 チェック 】 オ リンパ ス イメージ ング 株式会社 は 、 コンパクト デジタルカメラ の新 機種 として 、 ス タイ リッシュ な ボディー に 防 水 ・ 耐 衝撃 ・ 耐 低温 機能 を備えた 「 ol y mp us ▁st yl us ▁t g − 6 25 」 を含む コンパクト デジタルカメラ 5 機種 を 、2012 年 8 月 31 日から 順次 発売 する 。 ■ 各 機種 の主な 特 長 「 ol y mp us ▁st yl us ▁t g − 6 25 」 1 . ス タイ リッシュ な ボディー に 、 防 水 5 m 、 耐 衝撃 1.5 m 、 耐 低温 − 10 ° C の性能 を 搭載 。 料理 や パーティー など 日常 の 何 気 ない シーン に加え 、 海 や 山 など アクティブ な シーン でも 安心 して 撮影 できる 。 2 . 高 感度 ・ 高 画質 ・ 高速 オート フォーカス を実現する 「 i hs テクノロジー ( ※ 4 )」 で 、 夜 景 や 逆 光 でも 美しい 写真を 残 せる 。 3 . ピン ト 合わせ の 精度 を向上させる 補助 光 「 af イル ミ ネー ター 」 により 、 暗い シーン で の撮影 に 便利 。 「 ol y mp us ▁st yl us ▁v h − 5 15 」 1 . 高 感度 ・ 高 画質 ・ 高速 オート フォーカス を実現する 「 i hs テクノロジー 」 で 、 夜 景 や 逆 光 でも 美しい 写真を 残 せる 。 2 . 滑らか で 高 画質 な フル ハイビジョン ムービー が 、 長時間 録画 可能 。 3 . 鮮やかな 色彩 に する 「 ポップ 」 や 、 光の 効果 で や わら かい 雰囲気 に 写 し 出す 「 ウェ ディング 」 など 、 さまざまな 演出 の撮影 ができる 12 種類の 「 マジック フィルター 」 を 楽しめる 。 「 ol y mp us ▁st yl us ▁v h − 4 10 」 1 . 3.0 型 液晶 タッチ パネル の採用 により 、 ズーム の 調整 や 色 合い 、 明るさ などを 直 感 的に 操作 可能 。 2 . 手 ぶ れ を ダブル で 抑え る 「 d ual ▁is 」 により 、 手 ぶ れ ・ 被 写 体 ぶ れ を 効果 的に 低減 する 。 3 . 「 ビュー ティー モード 」 の 「 メイク アップ 機能 」 により 、 撮影した 画像 に チー ク や つけ まつ 毛 を加えた り 、 瞳 の色 や 大きさ を変える など 、 人物 の 顔を より 美しく 仕上げ ることができる 。 「 ol y mp us ▁st yl us ▁sp − 8 20 u z 」 1 . 手の ひら サイズの 小型 ボディ に 、 広 角 2 2.4 mm から 望 遠 89 6 mm の 光学 40 倍 ウルトラ ズーム レンズ を搭載した 。 2 . 高 感度 ・ 高 画質 ・ 高速 オート フォーカス を実現する 「 i hs テクノロジー 」 で 、 夜 景 や 逆 光 でも 美しい 写真を 残 せる 。 3 . 旅 先 でも 入手 [SEP]
+INFO:tensorflow:input_ids: 4 8576 16273 60 2945 3069 7 2302 164 13 7245 5960 45 8756 9971 30155 41 3713 6715 17536 9170 1722 8390 7305 233 16273 60 2945 3069 603 11 7 9971 30155 4855 3713 34 7 60 791 24226 57 26116 17 2302 164 13 7245 5960 13 7245 18398 640 8756 23 3873 407 3445 1193 5532 13340 1193 2927 275 12336 43 228 21 646 9971 30155 41 3713 18 2298 16 50 22 457 532 7888 827 35 8 25825 360 3713 10706 1757 117 23 3873 407 3445 1193 5532 13340 1193 2927 275 12336 43 228 21 24 86 60 791 24226 57 26116 17 7 2302 164 41 85 7 7245 5960 5857 85 7 7245 18398 12336 47 3765 4167 15360 18 1431 8 1400 26 8961 45 7550 10 1059 474 278 1652 2459 7 300 26 84 45 18204 57 1652 153 22051 55 1422 355 8 25 86 150 22058 13 150 25009 13 2103 4832 28807 16159 23 393 17531 12100 15 15049 37 661 19 7 1090 1655 26 1819 288 153 5797 15474 1435 4490 8 31 86 2864 103 4870 10 9276 27280 4350 288 23 8064 2543 318 3811 470 21 74 7 15993 1652 19 10849 17 18389 8 23 3873 407 3445 1193 5532 13340 1193 4244 336 12336 41 118 21 24 86 150 22058 13 150 25009 13 2103 4832 28807 16159 23 393 17531 12100 21 19 7 1090 1655 26 1819 288 153 5797 15474 1435 4490 8 25 86 21081 19 150 25009 57 1158 16209 12427 12 7 14688 16089 1790 8 31 86 27901 11739 17 35 23 6694 21 26 7 11973 1045 19 26 8166 1721 7388 17 3616 32 1830 23 3221 3982 21 45 7 2842 2425 10849 6106 66 3800 23 10590 20971 21 18 16373 8 23 3873 407 3445 1193 5532 13340 1193 4244 336 12336 37 47 21 24 86 15602 177 13027 7557 7101 13870 74 7 29737 10 2823 26 502 2878 7 26893 1228 442 852 459 1977 1790 8 25 86 224 1028 964 18 5357 19 8873 56 23 221 23743 8713 21 74 7 224 1028 964 13 2774 3616 381 1028 964 18 1045 459 14199 35 8 31 86 23 4866 1959 2107 21 10 23 16377 1844 640 21 74 7 15952 3659 17 6071 104 26 4261 5219 1280 6088 101 7 16120 7025 26 8115 12919 45 7 929 10 14626 94 22894 14310 4308 8 23 3873 407 3445 1193 5532 13340 1193 13748 12336 50 110 534 776 21 24 86 12210 8410 16878 2881 4517 17 7 820 816 25 16748 757 28 1687 1485 4331 43 757 10 10291 438 1892 8356 29737 5874 8081 8 25 86 150 22058 13 150 25009 13 2103 4832 28807 16159 23 393 17531 12100 21 19 7 1090 1655 26 1819 288 153 5797 15474 1435 4490 8 31 86 2182 539 153 6788 5
+INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:label: kaden-channel (id = 2)
+INFO:tensorflow:*** Example ***
+INFO:tensorflow:guid: dev-2
+INFO:tensorflow:tokens: [CLS] ▁ 露 骨 すぎる !? サムスン が iphone は 古い と アンチ キャンペーン を展開 【 話題 】 サムスン が 行っている facebook での キャンペーン が 露 骨 だと 話題 になっている 。 サムスン は 自社 の スマートフォン 「 gal ax y ▁s ▁ii 」 は 最先端 だが アップル 社の 「 iphone 」 は もう 古い と 伝える 画像 を掲載 している 。 「 オールド スクール 」 と 表現 された iphone の そば には 糸 電話 や 古い タイプの 携帯電話 が置かれている 皮肉 た っぷ り な 出来 栄え だ 。 この キャンペーン について 、「 サムスン は アップル を 羨 ま し が っていて 、 や っている ことが 子ども だ 」 や 「 サムスン の 商品 は 好き だが さ す が に やり すぎ 」 という 声 が あ が っている 。 あまり に 露 骨 な この 広告 は もはや ジョーク だ 。 sam s ung ▁con tin u es ▁with ▁ anti - apple ▁r ant ▁on ▁ facebook , ▁sa ys ▁ iphone ▁is ▁“ old ▁school ” ■ 関連 記事 サムスン が アップル に 逆転 勝 訴 ! ▁ オーストラリア で の販売 差し 止め 取り消し ■ 関連 記事 ・ 【 記事 連動 】 音 の編集 講座 「 音 量の 合わせ 方 」 【 ビデオ sa lon 】 ・ kddi が iphone 向け アプリ 「 au お 客 さま サポート 」 ▁ をリリース 【 話題 】 ・ 電子書籍 市場 を こ っ そ り 支え るのは 女の子 の エ ッチ な 願 望 ? 【 話題 】 ・ 連載 ● 極 ・ ト 書き 一行 の カット 割り ! ▁第 6 回 【 ビデオ sa lon 】 ・ 白 物 家電 は や っぱ り 店頭 買い が主流 ! ▁ 洗濯 機の ネット 通販 は たった 3.2 % 【 話題 】 [SEP]
+INFO:tensorflow:input_ids: 4 9 3409 1168 9241 19959 30229 12 22021 11 2947 20 18745 6442 18304 17536 4346 7305 30229 12 7753 24337 408 6442 12 3409 1168 2015 4346 731 8 30229 11 4808 10 9927 23 15724 14955 407 1785 10247 21 11 28031 570 12904 3477 23 22021 21 11 2134 2947 20 11137 3659 10257 54 8 23 16528 3191 21 20 1030 53 22021 10 8661 42 3293 2454 26 2947 5955 4924 16035 17319 40 20993 101 57 8153 17543 314 8 80 6442 257 93 30229 11 12904 18 31057 428 32 12 19409 7 26 587 655 5881 314 21 26 23 30229 10 1508 11 4907 570 338 263 12 17 6834 8229 21 49 891 12 703 12 587 8 2187 17 3409 1168 57 80 2963 11 12039 27318 314 8 21863 81 12350 6340 13271 534 1782 9980 9 23911 61 20717 4170 5840 6877 9 24337 83 6133 14020 9 22021 8713 16109 15712 13401 809 25825 1617 2110 30229 12 12904 17 5790 264 7454 543 9 1825 19 5789 6242 5488 26541 25825 1617 2110 13 17536 2110 10802 7305 515 15579 8260 23 515 7628 4870 478 21 17536 1593 1854 19338 7305 13 27414 12 22021 1331 7071 23 3061 220 1348 6968 3752 21 9 4455 17536 4346 7305 13 27125 1338 18 315 1315 1010 101 15306 14649 12953 10 234 2794 57 4736 1687 3017 17536 4346 7305 13 1935 18676 1467 13 103 2202 11577 10 3685 7535 543 581 43 107 17536 1593 1854 19338 7305 13 422 280 17645 11 26 10010 101 22463 9201 9780 543 9 24381 3391 1106 25604 11 14339 20469 1304 17536 4346 7305 5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:label: kaden-channel (id = 2)
+INFO:tensorflow:*** Example ***
+INFO:tensorflow:guid: dev-3
+INFO:tensorflow:tokens: [CLS] ▁“ あなた の 人生 史上 、 最高の 実 話 ” ▁サン ドラ ・ ブロック 最高の 演技 が 待 望 のリリース 全米 で 興行収入 2 億ドル を超える 大ヒット を記録し 、 主演の サン ドラ ・ ブロック が 、 本 年度 アカデミー賞 主演女優賞 受賞 をした 映画 「 し あわせ の 隠れ 場所 」 の ブルー レイ & dvd セット が 、 7 月 21 日 ( 水 ) より リリースされ ます 。 「 し あわせ の 隠れ 場所 」 は 、 サン ドラ ・ ブロック 演じる リー ・ アン と 、 孤独 な 黒人 青年 との 心の 触れ 合い を描いた ヒューマン ・ ドラマ 。 全米 スポーツ で 1 番人気 を誇る nfl ( national ▁ fo ot ball ▁ league ) の花 形 ルーキー 、 マイケル ・ オ アー 選手の 半 生 を描いた 感動 の実 話 です 。 父親の 顔 も 知らず に 育ち 、 母親 とは 引き 離 され 、 家族の 温 かみ を 知らず に 生き てきた マイケル の 能力 を見 抜き 、 フットボール の 選手として の 才能 を 開花 させ ていく リー ・ アン の姿 は 自立 した 1 人の 女性 であり 、 無償 の 愛情 を 注 ぐ 母親 であり 、 女性 なら 誰 し も が 感動 を覚え る でしょう 。 アカデミー賞 の 他にも 、 ゴールデン ・ グローブ 賞 ドラマ 部門 主演女優賞 受賞 、 放送 映画 批評家 協会 主演女優賞 受 賞を受賞 しており 、 サン ドラ ・ ブロック の 俳優 人生 集大成 とも言える 、 見事 な 演技 を 観 て 、 自分の “ し あわせ ” について 考えて みて は いか が でしょう か ? 「 し あわせ の 隠れ 場所 」 ストーリー 夫 と 娘 、 息子の 4 人で 幸せ に 暮らす 裕福な 白人 家庭 の 夫人 リー ・ アン 。 彼女は ある 凍 て つく ような 真 冬の 夜 、 ひとり 寂 しく t シャツ と 短 パン で 歩 いている 巨 漢 の 黒人 少年 に 目 を止め 、 声をかけ る 。 そして 、 マイケル と名乗る その 少年 を放って お け なくなり 、 ひと まず 自宅 へ 彼 を招き 入れる ことに 。 マイケル は 父親の 顔 も 知らず に 育ち 、 母親 とは 引き 離 され 、 住む 場所 や 学校 も 転 々と する 劣 悪 な 境 遇 に置かれていた 。 そんな 彼に 、 はじめ は 憐 れ み だけ を感じ ていた リー ・ アン 。 しかし 、 マイケル の 瞳 の中に 輝き を見つけた 彼女は 後見人 になると 決心 、 自分の 部屋 と 教育 の場 を与え 、 改めて 家族 の一員として マイケル を迎え 入れる の だった 。 また リー ・ アン は ある 時 、 大 柄 でありながら 敏 捷 な 肉体 と 仲間 を 危険 から 守る 保護 本 能 に 秀 で た 心 を持つ マイケル に アメリカン ・ フットボール の 才能 を見 出す 。 こう して アメ フト に取り組む マイケル は たちまち その 能力 を発揮し 、 一躍 注目 選手として 成長 していく のだが ... 。 ・ ワーナー ・ ホーム ・ ビデオ 「 ブルー レイ 」 特集 ・ し あわせ の 隠れ 場所 ▁- ▁ 作品 情報 [SEP]
+INFO:tensorflow:input_ids: 4 16109 5465 10 4221 3524 7 8424 674 417 809 10548 2564 13 2465 8424 4821 12 4691 1687 15926 3521 19 17549 25 10443 3122 8883 7381 7 9796 467 2564 13 2465 12 7 96 951 19104 28970 3520 3239 244 23 32 13945 10 9526 787 21 10 2042 765 763 1698 1573 12 7 46 22 253 33 15 164 14 94 21521 3418 8 23 32 13945 10 9526 787 21 11 7 467 2564 13 2465 11971 273 13 500 20 7 20280 57 5936 3066 271 9415 9186 2878 3498 22959 13 1000 8 3521 793 19 24 9445 9689 11089 15 15070 9 8247 5986 15214 9 24084 14 8820 237 12911 7 4228 13 233 660 8984 866 196 3498 17490 9577 417 2767 8 11521 2641 30 18443 17 11289 7 4180 208 1635 3150 79 7 15246 2595 5867 18 18443 17 3320 1374 4228 10 1015 1429 4671 7 8939 10 6315 10 6216 18 18154 909 2199 273 13 500 4754 11 12642 29 24 306 577 75 7 15109 10 20518 18 3885 1477 4180 75 7 577 1598 5943 32 30 12 17490 12230 56 16744 8 19104 10 6727 7 7275 13 14998 436 1000 1292 28970 3520 7 269 244 10806 714 28970 2350 4146 453 7 467 2564 13 2465 10 1835 4221 30251 14765 7 12551 57 4821 18 1663 58 7 1393 1314 32 13945 809 257 15942 16758 11 11115 12 16744 95 3017 23 32 13945 10 9526 787 21 1879 764 20 1896 7 7635 37 3777 15199 17 12302 18413 6320 2933 10 3702 273 13 500 8 5107 382 18697 58 3546 877 562 12319 1090 7 9914 18542 3526 214 12544 20 2606 1077 19 2792 4550 5295 1388 10 5936 1443 17 303 14341 7 26514 56 8 862 7 4228 17590 65 1443 28086 220 1068 5300 7 5815 2137 6906 90 2189 18368 22185 2270 8 4228 11 11521 2641 30 18443 17 11289 7 4180 208 1635 3150 79 7 9957 787 26 455 30 1582 7320 35 8812 1055 57 2819 12104 27604 8 11152 9831 7 4283 11 30954 964 206 926 7192 124 273 13 500 8 9680 7 4228 10 16120 2565 23225 26682 5107 30674 1726 24519 7 1393 2335 20 446 7462 5681 7 7532 1342 12441 4228 6321 22185 10 121 8 240 273 13 500 11 382 180 7 62 2825 8650 3763 25364 57 9456 20 3553 18 3657 28 17827 1752 96 1624 17 1149 19 40 509 372 4228 17 3730 13 8939 10 6216 1429 1830 8 691 55 12660 7820 21289 4228 11 27404 65 1015 17881 7 18301 7928 6315 3193 3263 10338 2532 8 13 12585 13 803 13 1593 23 2042 765 21 7264 13 32 13945 10 9526 787 51 9 258 525 5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:label: peachy (id = 5)
+INFO:tensorflow:*** Example ***
+INFO:tensorflow:guid: dev-4
+INFO:tensorflow:tokens: [CLS] ▁ スマート で 美しい “ サイ フ 美人 ” は ロンドン っ 娘 ! ▁その 理由は カード にあり ! あい かわ らず 厳しい 残 暑 が 続いて います が 、 もう まもなく 8 月 も 終わり 。 さ て 、 みな さん 夏休み は何 を され ました か ? 海外 旅行 、 夏の セール と 時間 も お金 も い ろん な 使い 道 があったこと だと は 思い ます 。 とくに お金 と なれば 、 多くの 人が 夏の ボーナス を 目 論 んで 夏休み を 楽 し んだ か と思います 。 思 わず 使い すぎ てしまった と なれば 、 一応 精算 して おか なければ 。 女 た るもの 、 お 財 布 の管理 くらい しっかり で きて ないと ...... え 、 あれ ? ▁ なん か 想像 以上に 現金 がない 。 あれ ー 、 何 に 使った っ け かな ぁ ...... 。 いく ら 気 をつけて いて も 、 現金 での 支出 管理 は なかなか 難しい もの 。 財 布 に入っている と つい つい 使 ってしまう なら 財 布 に お金 を 持 た なければ いい ! ▁ と思い たい が 、 フィナンシャル プラン ナー の 山口 京 子 氏は こう 話す 。 「 実は “ 最小限 の 現金 だけ 入れ て お けば 、 お金 が 貯 まる ” というのは 大きな 誤解 です 。 慣れ て しま えば 、 計画 性が 薄れ てくる 可能性 が あります 。 atm で 下ろす 金額 と 回数 を決め 、 手 持ち の 現金 の 適正 額 を設定し 、『 つか う お金 』、『 貯 める お金 』、『 一 定額 支払う お金 』 を き っち り 分け て 、 用途 に あう 決済 方法 を選ぶ ことが 家 計 管理 を スマート 化する 近 道 となり ます 」 とのこと 。 では 、 そんな 支出 管理 の プロ である 山口 氏 お ス ス メ の 方法は 、 デ ビット カード 。 利用 した 時点で 即時 に 自分の 銀行 口座 から 引き 落とされ るため 、 現金 と同じ 感覚 で 支払い が可能 。 利用 履歴 は インターネット で 即時 に 確認 することができる と 、 誰でも 安心 して 使える 優れ もの な の である 。 ▁今 は j - de bit ( ジェイ デ ビット カード ) に加え 、 vis a からも デ ビット カード が出ている 。 この vis a デ ビット カード は 、 vis a ▁ マーク が 掲 出 されている 世界中の お 店 で 営業 時間 内 いつでも 使える という わけ 。 その 優秀 さを 証明 すべく 山口 氏 が行った 実験 が 、「 現金 1 万円 + デ ビット カード で どれ くらい 生活 できる か 」 。 これは いわゆる “ 節 約 生活 ” ではなく 、 電子 決済 で どの 程度 暮 らせる か を 試 したもの 。 使用した の は vis a デ ビット カード 。 普通 に 日々 を 過ごし て みると 、 事実 vis a マーク のお 店 は 想像 以上 にあり 、 現金 を 使 わ なければ いけない シーン は そんな に なかった の である 。 結果 、 1 万円 の 現金 を使い 切る には 、 なん と 20 日間 も かかった の である 。 「 カード には 抵抗 [SEP]
+INFO:tensorflow:input_ids: 4 9 17607 19 5797 1314 1855 211 18837 809 11 1418 1315 1896 543 358 8019 725 1730 543 3049 2198 4178 5209 1435 13010 12 8201 19433 12 7 2134 7447 50 22 30 7683 8 338 58 7 6083 774 19918 11637 18 79 5363 95 3017 1355 2640 7 6568 22168 20 364 30 19135 30 128 22608 57 4630 162 16457 2015 11 2969 3418 8 9549 19135 20 16446 7 398 732 6568 7941 18 303 505 2011 19918 18 1094 32 736 95 27873 8 2988 5822 4630 8229 3734 20 16446 7 21681 27207 55 3719 3714 8 612 40 8478 7 220 4680 2283 8278 7439 16622 19 17068 8548 10673 635 7 11568 3017 9 4547 95 12365 9598 13038 1978 8 11568 556 7 1059 17 17620 1315 1068 3905 17309 10673 8 2478 154 474 13301 1229 30 7 13038 408 17153 651 11 10781 13291 375 8 4680 2283 16959 20 10805 10805 2143 10108 1598 4680 2283 17 19135 18 1535 40 3714 2505 543 9 11585 1035 12 7 29558 4737 653 10 3279 1113 129 5065 691 12487 8 23 7754 1314 22096 10 13038 926 2986 58 220 14422 7 19135 12 12615 2929 809 10487 622 10884 2767 8 15236 58 3899 10326 7 514 8407 27857 7852 2375 12 27541 8 18462 19 25089 7884 20 6052 9253 7 224 1468 10 13038 10 18711 1433 23252 388 5310 307 19135 1874 12615 3331 19135 1874 92 27163 28084 19135 36 18 203 10642 101 3683 58 7 4409 17 20974 18822 1180 13074 655 149 1182 651 18 17607 5747 1518 162 159 3418 21 12863 8 38 7 11152 17153 651 10 449 27 3279 469 220 60 60 401 10 10233 7 189 3192 725 8 1002 29 3978 26878 17 1393 868 19941 28 1635 22193 4972 7 13038 1052 6622 19 15303 3679 8 1002 25119 11 2315 19 26878 17 2445 2177 20 7 21376 22051 55 10331 24212 375 57 10 27 8 9099 11 366 61 1372 12701 15 5888 189 3192 725 14 2459 7 15757 106 2811 189 3192 725 20972 8 80 15757 106 189 3192 725 11 7 15757 106 9 2030 12 26687 353 134 13470 220 568 19 1322 364 194 24455 10331 49 7735 8 65 7502 12267 4069 8854 3279 469 17782 1633 12 93 13038 24 1323 1259 189 3192 725 19 11292 7439 711 355 95 21 8 881 1774 1314 979 198 711 809 586 7 1493 18822 19 4302 1504 17393 10825 95 18 2780 2529 8 8966 10 11 15757 106 189 3192 725 8 2334 17 7668 18 10305 58 15789 7 2671 15757 106 2030 4992 568 11 12365 759 1730 7 13038 18 2143 704 3714 19133 1652 11 11152 17 706 10 27 8 1062 7 24 1323 10 13038 6943 9331 42 7 4547 20 110 2883 30 8901 10 27 8 23 725 42 2546 5
+INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:label: dokujo-tsushin (id = 0)
+INFO:tensorflow:*** Example ***
+INFO:tensorflow:guid: dev-5
+INFO:tensorflow:tokens: [CLS] ▁ 男 に 捨てられ る 女 の特徴 / 100 年の 恋 も 冷 める 女 の 態度 など − 【 お気に入り 登録 記事 】 週間 ランキング p each y アプリ を利用している 皆 さま 、 アプリ の 「 お気に入り 」 機能 は 使 って います か ? 「 お気に入り 」 とは 、「 あと で また 読み たい !」 と思った 記事 を 登録 すると 、 読み たい ときに いつでも その 記事 を呼び 出 せ ちゃ う 便利 な 機能 です 。 つまり 、「 お気に入り 」 の数 が多い ほど 、 読者 の 関心 を ひ いた 記事 ということ 。 それ では 、 先 週 (2012 年 8 月 2 日 〜 8 月 8 日 ) 最も多く 「 お気に入り 」 登録された 記事 top 5 を ご 紹介 します ! 第 1 位 : こんな 女 は 捨てられ る ! 男性 が 疎 んじ る 女性 とは この世 に 無償 の 愛 など め った に 存在しない 。 ま して や 男女 の 愛 など 、 有 償 の 愛 の最 たる ものである 。 時代 や カップル によって 与え 合う もの 、 求め あう ものは 変わって くる が 、 往 々 にして オン ナ が オト コ に 求める の は 安心 、 安定 である 。 経済的 安定 であった り 、 愛情 と sex の 安定 供給 であった り 、 オン ナ が オト コ に 求める の は これに 尽き る の である 。 第 2 位 : 気 をつけて ! 男性 が 嫌 う 女性の 態度 10 選 女子 力を 日 頃から 磨 いている みな さん 、 男性 の 視 線を 気に し ています か ? 多くの 方は 気に している と思います が 、 実際の ところ 、 男性 は 女性の どんな 態度 を 嫌 が る のか ご 存 知 でしょう か 。 結 構 細かい と ことを 気に している 男性 は 多い もので す 。 筆 者は 男性 の立場 として 、 こんな こと された ら 100 年の 恋 も 冷 め てしまう か も 、 という 女性の 態度 を お 伝え します の で 、 参考 にして ください 。 第 3 位 : 1 か月 − 10 kg ! 確実に 痩 せる ダイエット プログラム が 明らかに 8 月 1 日発売の 雑誌 「 pop te en 」 9 月号 は 、「 夏休み ガ チ ヤ セ ダイエット プログラム 31 days 」 を 特集 。 しっかり 守 れば 1 ヶ月 で 10 キロ 痩 せ を 叶 える 夢 の ダイエット プログラム 表 が公開された 。 第 4 位 : ム ダ 毛 処理 3 つの 注意 ポイント 夏 は 薄 着 になる し 、 毛 の 処理 に 気 を 抜け ない 季節 。 特に 「 水 着 を 着 る !」 なんて ことになる と 、 もう 前の 日 は 大変 だった り し ません か ? ▁そして 、 ちゃん とした つもり でも 意 外 と 見 落とし があった り して ... 。 そこで 今回 は 、 みな さん が 見 落とし がちな ム ダ 毛 処理 の 注意 ポイント 3 つ を ご 紹介 します ! ▁ 意 外 な ト コロ に 、 毛 が ... 。 第 5 位 : 混ぜ [SEP]
+INFO:tensorflow:input_ids: 4 9 629 17 26100 56 612 5570 140 431 223 2865 30 3274 3331 612 10 5985 45 12336 17536 27206 1202 2110 7305 2604 3093 262 30222 407 7071 26866 5244 6968 7 7071 10 23 27206 21 640 11 2143 341 19433 95 3017 23 27206 21 208 93 3466 19 240 3009 1035 2068 12700 2110 18 1202 403 7 3009 1035 2981 24455 65 2110 8898 353 1037 7038 307 18389 57 640 2767 8 5146 93 27206 21 5493 1157 604 7 5736 10 5983 18 1155 308 2110 3972 8 566 38 7 539 2748 16519 16 50 22 25 33 681 50 22 50 33 14 23551 23 27206 21 22469 2110 9628 41 18 913 4959 18460 543 59 24 205 76 15420 612 11 26100 56 543 1219 12 13581 9684 56 577 208 23173 17 15109 10 589 45 497 201 17 13541 8 428 55 26 4123 10 589 45 7 599 14415 10 589 11142 5130 753 8 668 26 19361 73 14833 4277 375 7 12622 20974 2303 9457 4436 12 7 10105 709 2113 1711 145 12 19559 182 17 16409 10 11 22051 7 3236 27 8 9749 3236 78 101 7 20518 20 26927 10 3236 2808 78 101 7 1711 145 12 19559 182 17 16409 10 11 4351 21031 56 10 27 8 59 25 205 76 474 13301 543 1219 12 7398 307 7567 5985 47 1603 712 3985 33 4087 5920 4550 6083 774 7 1219 10 1667 6859 16271 32 20033 95 3017 398 11358 16271 54 27873 12 7 3845 917 7 1219 11 7567 10150 5985 18 7398 12 56 1974 913 7020 782 16744 95 8 2402 12090 14406 20 582 16271 54 1219 11 3431 1560 263 8 2626 1616 1219 8768 34 7 15420 229 53 154 431 223 2865 30 3274 497 2201 95 30 7 49 7567 5985 18 220 14148 18460 10 19 7 7785 2113 19120 8 59 31 205 76 24 3581 12336 47 1281 543 17377 29022 4490 30834 1740 12 5059 50 22 24 18860 1087 23 11438 1837 2178 21 52 3692 11 93 19918 285 276 485 342 30834 1740 457 22686 21 18 7264 8 16622 898 1754 24 2117 19 47 4659 29022 1037 18 12815 1905 1392 10 30834 1740 799 19340 8 59 37 205 76 193 213 1280 1465 31 334 3727 1319 1080 11 4905 447 367 32 7 1280 10 1465 17 474 18 5291 278 7934 8 531 23 164 447 18 447 56 2068 21874 2060 20 7 2134 1552 33 11 10095 121 101 32 9621 95 3017 602 7 2278 611 8997 153 1534 311 20 310 14079 507 101 55 2532 8 3641 11641 11 7 6083 774 12 310 14079 25832 193 213 1280 1465 10 3727 1319 31 192 18 913 4959 18460 543 9 1534 311 57 103 5049 17 7 1280 12 2532 8 59 41 205 76 13173 5
+INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:label: peachy (id = 5)
+INFO:tensorflow:***** Running evaluation *****
+INFO:tensorflow:  Num examples = 1473 (1473 actual, 0 padding)
+INFO:tensorflow:  Batch size = 8
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Running eval on CPU
+INFO:tensorflow:*** Features ***
+INFO:tensorflow:  name = input_ids, shape = (?, 512)
+INFO:tensorflow:  name = input_mask, shape = (?, 512)
+INFO:tensorflow:  name = is_real_example, shape = (?,)
+INFO:tensorflow:  name = label_ids, shape = (?,)
+INFO:tensorflow:  name = segment_ids, shape = (?, 512)
+INFO:tensorflow:**** Trainable Variables ****
+INFO:tensorflow:  name = bert/embeddings/word_embeddings:0, shape = (32000, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/embeddings/token_type_embeddings:0, shape = (2, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/embeddings/position_embeddings:0, shape = (512, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/embeddings/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/embeddings/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/pooler/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/pooler/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = output_weights:0, shape = (9, 768)
+INFO:tensorflow:  name = output_bias:0, shape = (9,)
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Starting evaluation at 2019-09-06-07:26:38
+INFO:tensorflow:Graph was finalized.
+2019-09-06 16:26:38.532483: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0, 1
+2019-09-06 16:26:38.532548: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-09-06 16:26:38.532555: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 1 
+2019-09-06 16:26:38.532560: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N Y 
+2019-09-06 16:26:38.532563: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 1:   Y N 
+2019-09-06 16:26:38.532684: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10419 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2019-09-06 16:26:38.532844: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 10421 MB memory) -> physical GPU (device: 1, name: GeForce GTX 1080 Ti, pci bus id: 0000:02:00.0, compute capability: 6.1)
+INFO:tensorflow:Restoring parameters from ../model/livedoor_output/model.ckpt-11052
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Finished evaluation at 2019-09-06-07:27:13
+INFO:tensorflow:Saving dict for global step 11052: eval_accuracy = 0.97623897, eval_loss = 0.20651244, global_step = 11052, loss = 0.2055358
+INFO:tensorflow:Saving 'checkpoint_path' summary for global step 11052: ../model/livedoor_output/model.ckpt-11052
+INFO:tensorflow:evaluation_loop marked as finished
+INFO:tensorflow:***** Eval results *****
+INFO:tensorflow:  eval_accuracy = 0.97623897
+INFO:tensorflow:  eval_loss = 0.20651244
+INFO:tensorflow:  global_step = 11052
+INFO:tensorflow:  loss = 0.2055358
+Loaded a trained SentencePiece model.

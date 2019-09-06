@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-#【predict】
+#【predict_bert】
 #
 # 概要:
 #      bert を分類問題に適用した場合の推論器
 #
-# TPU利用時:
+# TPU 利用時:
 # https://qiita.com/uedake722/items/fb9877fc45224353b44b
 #
 import sys
@@ -32,6 +32,10 @@ import os
 import pandas as pd
 import tempfile
 import re
+
+# report
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
 
 # 設定類
 CURDIR = os.getcwd()
@@ -83,11 +87,18 @@ def latest_ckpt_model():
 def accracy(result, label_list):
     import pandas as pd
     test_df = pd.read_csv("/work/data/livedoor/test.tsv", sep='\t')
-    print(test_df)
     test_df['predict'] = [ label_list[elem['probabilities'].argmax()] for elem in result ]
     acc = sum( test_df['label'] == test_df['predict'] ) / len(test_df)
-    # 正答率(accracy)を表示
-    print("acc: {}".format(acc))
+
+    # 正答率(accuracy)を表示
+    print("*** accuracy: {} ***".format(acc))
+
+    # 詳細なレポートが簡単に見れる
+    # support は正解データの数
+    print("*** classification_report ***")
+    print(classification_report(test_df['label'], test_df['predict']))
+    print("*** 混合行列 ***")
+    print(confusion_matrix(test_df['label'], test_df['predict']))
     
 def main():
     # bert

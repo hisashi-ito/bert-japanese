@@ -74,7 +74,13 @@ def corpus():
         label = [cat] * len(body)
         all_text.extend(body)
         all_label.extend(label)
-    return pd.DataFrame({'text' : all_text, 'label' : all_label})
+    df = pd.DataFrame({'text' : all_text, 'label' : all_label})
+    print("*** normal ***")
+    print(df.head())
+    df = df.sample(frac=1, random_state=23).reset_index(drop=True)
+    print("*** shuf ***")
+    print(df.head())
+    return df
 
 # save
 def save(df):
